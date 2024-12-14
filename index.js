@@ -13,6 +13,7 @@ const {
     getAggregateVotesInPollMessage,
    areJidsSameUser
 } = require("baileys");
+const fs = require("node:fs")
 const pino = require('pino');
 const { Boom } = require('@hapi/boom');
 const chalk = require('chalk');
@@ -26,6 +27,16 @@ const append = require("./lib/append");
 const serialize = require("./lib/serialize.js");
 const config = require("./settings.js");
 
+global.fetchJson = async(url) {
+	try {
+		let urls = await fetch(url)
+		let res = await urls.json()
+		return res
+	} catch (error) {
+		console.log("Fetch Error!")
+	}
+}
+	
 const appenTextMessage = async (m, sock, text, chatUpdate) => {
     let messages = await generateWAMessage(
       m.key.remoteJid,
