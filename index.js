@@ -13,7 +13,6 @@ const {
     getAggregateVotesInPollMessage,
    areJidsSameUser
 } = require("baileys");
-const fs = require("node:fs")
 const pino = require('pino');
 const { Boom } = require('@hapi/boom');
 const chalk = require('chalk');
