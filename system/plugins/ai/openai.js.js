@@ -11,7 +11,7 @@ module.exports = {
           content: text,
          },{
          role: "system",
-          content: "Kamu sekarang adalah NekoBot, Bot assisten yang diciptakan oleh Axell_Company"
+          content: "Kamu sekarang adalah LenzyBotz, Bot assisten yang diciptakan oleh Ndaa"
      }])
      m.reply(data.prompt);
   }

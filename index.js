@@ -26,7 +26,12 @@ const append = require("./lib/append");
 const serialize = require("./lib/serialize.js");
 const config = require("./settings.js");
 
-global.fetchJson = async(url) {
+//GLOBAL
+global.APIs = {
+    btch: 'https://btch.us.kg/',
+    ndaa: 'https://api.ndaadev.us.kg/api/',
+}
+global.fetchJson = async(url) => {
 	try {
 		let urls = await fetch(url)
 		let res = await urls.json()
@@ -108,7 +113,7 @@ async function system() {
        printQRInTerminal: false,
         auth: state,
          version: [2, 3000, 1017531287],
-           browser: Browsers.ubuntu("Edge"),
+           browser: Browsers.ubuntu("Chrome"),
             getMessage: async key => {
             const jid = jidNormalizedUser(key.remoteJid);
             const msg = await store.loadMessage(jid, key.id);
