@@ -1,6 +1,6 @@
 module.exports = {
     command: "bingimg",
-    alias: ["bing"],
+    alias: ["bingimg"],
     category: ["ai"],
     description: "get image from bing",
     loading: true,
