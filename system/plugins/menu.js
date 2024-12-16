@@ -77,11 +77,11 @@ Object.entries(menu).forEach(([tag, commands]) => {
                  serverMessageId: -1
              },
               externalAdReply: {
-               title: "NekoBot - simple WhatsApp bot",
-               body: "- NekoBot adalah bot WhatsApp yang didesain untuk membantu anda di WhatsApp",
+               title: "LenzyBotz - simple WhatsApp bot",
+               body: "- LenzyBotz adalah bot WhatsApp yang didesain untuk membantu anda di WhatsApp",
                mediaType: 1,
                thumbnailUrl: "https://files.catbox.moe/yupd7z.jpg",
-               sourceUrl: "https://api.botwa.space",
+               sourceUrl: "https://api.ndaadev.us.kg",
                renderLargerThumbnail: true
            }
          }
