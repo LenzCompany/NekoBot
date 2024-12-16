@@ -72,7 +72,7 @@ Object.entries(menu).forEach(([tag, commands]) => {
             isForwarded: !0,
             forwardingScore: 127,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: "120363355890061032@newsletter",
+                newsletterJid: "120363361386414424@newsletter",
                 newsletterName: "☘️ nekoBot | Playground",
                  serverMessageId: -1
              },
